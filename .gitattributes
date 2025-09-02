@@ -1,0 +1,9 @@
+# Focus on Dart code and assets
+*.dart linguist-detectable=true
+*.png linguist-detectable=true
+*.jpg linguist-detectable=true
+*.jpeg linguist-detectable=true
+*.svg linguist-detectable=true
+
+# Hide everything else
+* linguist-detectable=false
