@@ -1,4 +1,6 @@
+import 'package:e_com_ui/details.dart';
 import 'package:e_com_ui/home.dart';
+import 'package:e_com_ui/landing_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Home(),
+      home: LandingPage(),
     );
   }
 }

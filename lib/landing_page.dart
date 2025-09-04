@@ -1,3 +1,4 @@
+import 'package:e_com_ui/home.dart';
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
@@ -32,32 +33,40 @@ class _LandingPageState extends State<LandingPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Container(
-                  padding: EdgeInsets.only(
-                    top: 10,
-                    bottom: 10,
-                    left: 25,
-                    right: 30,
-                  ),
-                  decoration: BoxDecoration(
-                    color: Color(0xffffcc3f),
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(15),
-                      bottomLeft: Radius.circular(15),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Home()),
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.only(
+                      top: 10,
+                      bottom: 10,
+                      left: 25,
+                      right: 30,
                     ),
-                  ),
-                  child: Row(
-                    children: [
-                      Text(
-                        "Next",
-                        style: TextStyle(
-                          fontSize: 35,
-                          fontWeight: FontWeight.w500,
-                        ),
+                    decoration: BoxDecoration(
+                      color: Color(0xffffcc3f),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(15),
+                        bottomLeft: Radius.circular(15),
                       ),
-                      SizedBox(width: 20),
-                      Icon(Icons.arrow_forward_ios),
-                    ],
+                    ),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Next",
+                          style: TextStyle(
+                            fontSize: 35,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        Icon(Icons.arrow_forward_ios),
+                      ],
+                    ),
                   ),
                 ),
               ],

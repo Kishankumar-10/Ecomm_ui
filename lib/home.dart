@@ -1,3 +1,4 @@
+import 'package:e_com_ui/details.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -106,37 +107,45 @@ class _HomeState extends State<Home> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xffffe08e),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Orange",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Details()),
+                        );
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xffffe08e),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Orange",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          Text(
-                            "\$2.88 each",
-                            style: TextStyle(
-                              color: Colors.black54,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
+                            Text(
+                              "\$2.88 each",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          Image.asset(
-                            "images/orange.png",
-                            height: 110,
-                            width: 110,
-                            fit: BoxFit.cover,
-                          ),
-                        ],
+                            Image.asset(
+                              "images/orange.png",
+                              height: 110,
+                              width: 110,
+                              fit: BoxFit.cover,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(width: 20),
