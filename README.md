@@ -10,6 +10,17 @@ A Flutter-based e-commerce mobile application featuring a modern grocery shoppin
 - **Navigation**: Seamless navigation between home and product detail screens
 - **Responsive Design**: Optimized for mobile devices with clean UI
 
+## Screenshots
+
+### Landing Page
+![Landing Page](screenshots/landing_page.png)
+
+### Home Screen
+![Home Screen](screenshots/home_screen.png)
+
+### Details Page
+![Details Page](screenshots/details_page.png)
+
 ## Project Structure
 
 ```
